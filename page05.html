@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="sample4.css">
+        <style>
+             * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            /* Image container styles */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-container div {
+            flex: 1 0 calc(50% - 20px);
+            position: relative;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-container p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+            padding: 8px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+        .image-container div:hover img {
+            transform: scale(1.1);
+        }
+        [class*="str"]	{background-color:rgb(73, 177, 59);
+                color:#070707;
+                width: 65%;
+        }    h1{
+                line-height: 1.5;
+                font-size: 44px;
+            }
+            /* Left side content styles */
+        .left-content {
+            float: left;
+            width: 15%;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-right: 2px solid #ccc;
+        }
+
+        .left-content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .left-content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .left-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .left-content ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .left-content ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .left-content ul li a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .left-content ul li a:hover {
+            text-decoration: underline;
+        } /* Right side content styles */
+        #content {
+            margin-left: 15%; /* Adjust based on left-content width */
+            padding: 20px;
+        }
+        h2{
+            line-height: 1.5;
+        }
+        
+
+        </style>
+    </head>
+    <body>
+        <!--outline-->
+        <div class=Container>
+            <!--heading area-->
+            <div class=top>
+                <img class=imgl src=Images/sri-lanka.png>
+                <!--Top block menu-->
+                <ul>
+                    <li><a href="index.html">Home</a>
+                        <li class="dropdown"> <a href="page04.html" class="dropbtn">Places</a>
+                        </li>
+                    </li>
+                    <li class="dropdown"> <a href="page05.html" class="dropbtn">History</a></li>
+                    <!--drop menu for News-->
+                    <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">About Us</a> <div class="dropdown-content">
+                        <a href="#">Email</a>
+                        <a href="#">Phone</a>
+                        <a href="#">Profiles</a>
+                        </div>
+                        </li>
+                    </ul>
+                    
+                    </div><!-- Left side content -->
+                    <div class="left-content"> <h2>Explore the Beauty of Sri Lanka</h2>
+                        <p>Discover the breathtaking landscapes, rich biodiversity, and vibrant culture of Sri Lanka. From lush tea plantations to ancient ruins, there's something for everyone to enjoy in this tropical paradise.</p>
+                        <p>Plan your next adventure and immerse yourself in the natural wonders of Sri Lanka. Whether you're seeking relaxation on pristine beaches or excitement in the wilderness, this island has it all.</p>
+                        <h3>Featured Destinations</h3>
+                        <ul>
+                            <li><a href="#">Ella - Paradise in the Mountains</a></li>
+                            <li><a href="#">Unawatuna - Serene Beach Retreat</a></li>
+                            <li><a href="#">Sigiriya - Majestic Rock Fortress</a></li>
+                            <li><a href="#">Hikkaduwa - Vibrant Coastal Town</a></li>
+                        </ul><br />
+                        <a href="https://www.lovesrilanka.org/nature-reserves-you-must-visit/"><img src="Images/travel.jpg" width="192px" height="auto"></a>
+
+                    </div>             
+                    <!--content area-->
+                    <div id="content">
+                        <h1>The History of Sri Lanka</h1>
+                        <p id="para1">Tropical island has a history that dates back many, many years. <span class="para1">It was in the 6th century B.C. that the first Sinhalese came to Sri Lanka, most likely from northern India.</span> And, the introduction of Buddhism preceded 250 B.C. Being close to the Indian subcontinent has made close cultural interaction easier from ancient times between Sri Lanka and India.</p>
+                        <p>Other Asian civilizations have had cultural influences on Sri Lanka. Arabs called it Serendib. Greek geographers referred to it as Taprobane. And, later on, European mapmakers named it Ceylon, which is a name that's still used for trade purposes occasionally.</p>
+                        <p>Twenty years of civil war, as well as a fragile ceasefire, should have left more noticeable scars; however, it appears implausibly peaceful.</p>
+                        <br />
+                
+                        <img src="Images/Nuwara-Eliya.jpg" alt="Nuwara-Eliya" width="100%" height="auto"> <!--Image of temple-->
+                        <h2>What is unique about Sri Lanka culture?</h2>
+                        <p>Sri Lankan culture is internationally associated with cricket, a distinct cuisine, an indigenous holistic medicine practice, religious iconography such as the Buddhist flag, and exports such as tea, cinnamon, and gemstones, as well as a robust tourism industry.</p>
+                        <br />
+                        <h2>What are 3 facts about Sri Lanka?</h2>
+                        <p><mark><i>Sri Lanka was first colonized by the Portuguese in 1505, then by the Dutch in 1658, then by the British in 1796 and finally gained independence in 1948.</i></mark> Sri Lanka used to be called Ceylon which is the transliteration of Ceilao. The oldest living tree known to be planted by man is in Sri Lanka.</p>    
+                        <br />
+                        <div class="para4">
+                        <h2>Wildlife and Nature</h2>
+                        <p>Sri Lanka’s wilderness is an exotic enchantment that has the sights and sounds of the beautiful Asian Elephants, feisty and elusive leopard, hairy sloth bear, the genteel deer, flamboyant birds and more exquisite creatures. Despite its small landmass, Sri Lanka boasts one of the highest rates of biological endemism in the world whether in plants or animals and is included among the top five biodiversity hotspots in the world. There are 22 National Parks in Sri Lanka and the most popular four Yala, Wilpattu, Minneriya and Udawalawe contain some of the most impressive wildlife found in Asia.<div class="startstr"> Meanwhile the ocean around Sri Lanka is home to the mighty blue whales, sperm whales and lively dolpins.</div></p>
+                        <p><div class="str-second">Yala, in the south-east is the most visited National Park in Sri Lanka and the second largest.</div></p>
+                        <p>There are six other National Parks and two wildlife sanctuaries in the vicinity of Yala. The Park is famous for its elephants, leopards and aquatic birds. It has the highest density of leopards in the world and hosts 215 bird species. You can also see the Sri Lankan sloth bear and the wild water buffalo, which are threatened species. Menneriya National Park in the north-central province is a good place to spot large numbers of Asian elephants during July-August. Around 150-200 elephants migrate here from Wasgamuwa National Park, where the most number of Sri Lankan Elephants live. Minneriya Park consists of the Minneriya reservoir built in medieval times. The reservoir sustains these herds of elephants during the dry season and its catchment areas see a number of water birds.</p>
+                        <p>For many online casino players, Sri Lanka is exotic magic, with the sights and sounds of beautiful Asian elephants, the cheeky and elusive leopards, hairy sloth bears and more exquisite creatures. Despite this part, Sri Lanka can also boast of its fame in sports, namely, many online casino players appreciate football in Sri Lanka. In addition, consider casino brands as sponsors football in Sri Lanka, where you can visit many stadiums and national parks. The park is also an important habitat for the two endemic monkeys of Sri Lanka, purple-faced langur and toque macaque. You can spot the sambar deer and the axis deer here, while leopards and sloth bear are also found.</p>
+                        </div>
+                            <br />
+
+                        <div class="dropbtn">
+                            <span><b>More Details</b></span>
+                            <div class="dropbtn-content">
+                                <ul type="square">               
+                                    <li><a href="#Top">Back to the Top</a></li>
+                                   <li><a href="index.html">Introduction</a></li>
+                                   <li><a href="page04.html">Places to visit</a></li>
+                                   <li><a href="page05.html">History</a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <h2>Historical Periods of Sri Lanka</h2>
+                        <br />
+                        <div class="table-responsive">
+                        <table>
+                            <tr>
+                                <th>Period</th>
+                                <th>Events</th>
+                                <th>Significance</th>
+                            </tr>
+                            <tr>
+                                <td>Ancient Period</td>
+                                <td>Settlement by Indo-Aryan tribes, establishment of early kingdoms such as Anuradhapura and Polonnaruwa.</td>
+                                <td>Formation of early civilization, development of Buddhism.</td>
+                            </tr>
+                            <tr>
+                                <td>Medieval Period</td>
+                                <td>Invasions by South Indian kingdoms, establishment of Kandyan kingdom.</td>
+                                <td>Integration of Tamil and Sinhalese cultures, growth of trade.</td>
+                            </tr>
+                            <tr>
+                                <td>Colonial Period</td>
+                                <td>Portuguese, Dutch, and British colonization, coffee, tea, and rubber plantations.</td>
+                                <td>Introduction of Western culture and education, economic transformation.</td>
+                            </tr>
+                            <tr>
+                                <td>Modern Period</td>
+                                <td>Independence from British rule, ethnic tensions leading to civil war, emergence as a tourist destination.</td>
+                                <td>Struggle for self-governance, cultural diversity, economic challenges.</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <br />
+                        <h2>Popular destinations in Sri Lanka</h2>                  
+                        <br />                     
+                        <div class="image-container">
+                            <div>
+                                <img src="Images/colombo.jpg" alt="Colombo" >
+                                <p>Colombo</p>
+                            </div>
+                            <div>
+                                <img src="Images/ella.jpg" alt="Ella">
+                                <p>Ella</p>
+                            </div>
+                            <div>
+                                <img src="Images/kandy.jpg" alt="Kandy">
+                                <p>Kandy</p>
+                            </div>
+                            <div>
+                                <img src="Images/Galle.jpg" alt="galle">
+                                <p>Galle</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div><!--footer area-->
+                    <div id="footer">
+                    @DesignbySonaliChethana/2024 
+                    </div>
+        </div>
+                    
+                         
+                 
+    </body>
+</html>   
